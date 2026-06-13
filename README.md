@@ -1,4 +1,4 @@
-# QIU LOST & FOUND SYSTEM
+# UNI LOST & FOUND SYSTEM
 ## TABLE OF CONTENTS
 1. Features
 2. Technologies Used
@@ -8,7 +8,7 @@
 6. License
 
 ## FEATURES
-- User authentication with QIU email validation
+- User authentication with UNI email validation
 - Report lost or found items
 - Browse all items with category and status filters
 - Personal dashboard for user's own reports
@@ -31,7 +31,7 @@ Quick Tips: Email input in contact information section when submitting a report 
 - MySQL
 - Git
 - VS Code (optional)
-2. Download the folder Web_Technologies_FA
+2. Download the folder UNI_Lost_Found
 3. Start MySQL
 4. Create database (lost_found_db) and run each section
 5. Download dependencies in both frontend and backend folder
@@ -46,17 +46,17 @@ node server.js
 8. Open index.html in your browser
 
 ## TEST CREDENTIALS
-Login with your QIU email
+Login with your UNI email
 
 Tips: login credentials were set in database. You can use the credentials below to login:
   
->> email: johnsmith@qiu.edu.my
+>> email: johnsmith@uni.edu.my
 >>password: john123
   
 or any existing account in database.
 
 ## LIVE DEMO
-Access the application here: https://vwsdlxy.github.io/QIU-Lost-Found/index.html
+Access the application here: https://vwsdlxy.github.io/UNI-Lost-Found/index.html
 
 ## LICENSE
 MIT

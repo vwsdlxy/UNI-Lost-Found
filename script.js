@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
         }
         
-        const qiuEmailPattern = /^[a-zA-Z0-9._%+-]+@qiu\.edu\.my$/;
+        const uniEmailPattern = /^[a-zA-Z0-9._%+-]+@uni\.edu\.my$/;
 
-        if (!qiuEmailPattern.test(email)) {
-        emailError.textContent = "Please use your QIU email.";
+        if (!uniEmailPattern.test(email)) {
+        emailError.textContent = "Please use your UNI email.";
         return;
         }
 
@@ -109,7 +109,7 @@ MULTI-STEP FORM FOR REPORT PAGE
 // API endpoint - update this with your actual backend URL
 const API_BASE_URL = window.location.hostname === 'localhost' 
   ? 'http://localhost:5000/api'
-  : 'https://qiu-lost-found-backend-production.up.railway.app/api';
+  : 'https://uni-lost-found-backend-production.up.railway.app/api';
 
 // Current section tracker
 let currentSection = 1;
@@ -163,13 +163,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Validate email field for QIU format
+// Validate email field for UNI format
 function validateEmailField(input) {
-    const qiuEmailPattern = /^[a-zA-Z0-9._%+-]+@qiu\.edu\.my$/;
+    const uniEmailPattern = /^[a-zA-Z0-9._%+-]+@uni\.edu\.my$/;
     const formGroup = input.closest('.form-group');
     const errorSpan = document.getElementById('emailError');
     
-    if (input.value && !qiuEmailPattern.test(input.value)) {
+    if (input.value && !uniEmailPattern.test(input.value)) {
         input.style.borderColor = '#dc3545';
         if (!errorSpan) {
             const error = document.createElement('span');
@@ -178,7 +178,7 @@ function validateEmailField(input) {
             error.style.color = '#dc3545';
             error.style.fontSize = '0.8rem';
             error.style.marginTop = '0.2rem';
-            error.textContent = 'Please use your QIU email (xxxx@qiu.edu.my)';
+            error.textContent = 'Please use your UNI email (xxxx@uni.edu.my)';
             if (formGroup) {
                 formGroup.appendChild(error);
             }
@@ -300,15 +300,15 @@ function validateSection(section) {
         case 3: // Contact section
             const email = document.getElementById('reportContactEmail').value.trim();
             const phone = document.getElementById('reportContactPhone').value.trim();
-            const qiuEmailPattern = /^[a-zA-Z0-9._%+-]+@qiu\.edu\.my$/;
+            const uniEmailPattern = /^[a-zA-Z0-9._%+-]+@uni\.edu\.my$/;
             
             if (!email && !phone) {
                 alert('Please provide at least one contact method');
                 return false;
             }
             
-            if (email && !qiuEmailPattern.test(email)) {
-                alert('Please use your QIU email (xxxx@qiu.edu.my)');
+            if (email && !uniEmailPattern.test(email)) {
+                alert('Please use your UNI email (xxxx@uni.edu.my)');
                 return false;
             }
             
@@ -331,8 +331,8 @@ function validateSection(section) {
 
 // Helper validation functions
 function isValidEmail(email) {
-    const qiuEmailPattern = /^[a-zA-Z0-9._%+-]+@qiu\.edu\.my$/;
-    return qiuEmailPattern.test(email);
+    const uniEmailPattern = /^[a-zA-Z0-9._%+-]+@uni\.edu\.my$/;
+    return uniEmailPattern.test(email);
 }
 
 function isValidPhone(phone) {
