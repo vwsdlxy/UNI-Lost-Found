@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const uniEmailPattern = /^[a-zA-Z0-9._%+-]+@uni\.edu\.my$/;
 
         if (!uniEmailPattern.test(email)) {
-        emailError.textContent = "Please use your UNI email.";
+        emailError.textContent = "Please use your UniFind email.";
         return;
         }
 
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Validate email field for UNI format
+// Validate email field for UniFind format
 function validateEmailField(input) {
     const uniEmailPattern = /^[a-zA-Z0-9._%+-]+@uni\.edu\.my$/;
     const formGroup = input.closest('.form-group');
@@ -178,7 +178,7 @@ function validateEmailField(input) {
             error.style.color = '#dc3545';
             error.style.fontSize = '0.8rem';
             error.style.marginTop = '0.2rem';
-            error.textContent = 'Please use your UNI email (xxxx@uni.edu.my)';
+            error.textContent = 'Please use your UniFind email (xxxx@uni.edu.my)';
             if (formGroup) {
                 formGroup.appendChild(error);
             }
@@ -308,7 +308,7 @@ function validateSection(section) {
             }
             
             if (email && !uniEmailPattern.test(email)) {
-                alert('Please use your UNI email (xxxx@uni.edu.my)');
+                alert('Please use your UniFind email (xxxx@uni.edu.my)');
                 return false;
             }
             

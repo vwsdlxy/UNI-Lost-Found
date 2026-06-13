@@ -1,4 +1,4 @@
-# UNI LOST & FOUND SYSTEM
+# UniFind LOST & FOUND SYSTEM
 ## TABLE OF CONTENTS
 1. Features
 2. Technologies Used
@@ -8,7 +8,7 @@
 6. License
 
 ## FEATURES
-- User authentication with UNI email validation
+- User authentication with UniFind email validation
 - Report lost or found items
 - Browse all items with category and status filters
 - Personal dashboard for user's own reports
@@ -31,7 +31,7 @@ Quick Tips: Email input in contact information section when submitting a report 
 - MySQL
 - Git
 - VS Code (optional)
-2. Download the folder UNI_Lost_Found
+2. Download the folder UniFind_Lost_Found
 3. Start MySQL
 4. Create database (lost_found_db) and run each section
 5. Download dependencies in both frontend and backend folder
@@ -46,7 +46,7 @@ node server.js
 8. Open index.html in your browser
 
 ## TEST CREDENTIALS
-Login with your UNI email
+Login with your UniFind email
 
 Tips: login credentials were set in database. You can use the credentials below to login:
   
