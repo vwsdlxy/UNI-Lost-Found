@@ -109,7 +109,7 @@ MULTI-STEP FORM FOR REPORT PAGE
 // API endpoint - update this with your actual backend URL
 const API_BASE_URL = window.location.hostname === 'localhost' 
   ? 'http://localhost:5000/api'
-  : 'https://uni-lost-found-backend-production.up.railway.app/api';
+  : 'https://qiu-lost-found-backend-production.up.railway.app/api';
 
 // Current section tracker
 let currentSection = 1;
